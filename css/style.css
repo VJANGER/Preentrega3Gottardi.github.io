@@ -7,44 +7,8 @@
 .body {
   background-color: #efefef;
 }
-
-/*nav*/
-
-header {
-  background-color: #000;
-  width: 100%;
-  clear: both;
-  content: "";
-  display: table;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.menu {
-  width: 100%;
-  margin: auto;
-}
-.imageNav {
-  width: 80px;
-  float: left;
-  padding: 8px;
-}
-nav {
-  float: right;
-  color: white;
-}
-
-.li {
-  list-style: none;
-  margin-left: 4rem;
-  padding: 2rem 0;
-  float: left;
-  color: #fff;
-}
-.a {
-  font-weight: bold;
-}
-a:visited {
-  color: #fff;
+.imgLogo {
+  width: 3rem;
 }
 /*footer*/
 
@@ -294,7 +258,7 @@ article {
   .li {
     margin-left: 2rem;
     padding-top: 1rem;
-    color: #fff;
+    /*color: #fff;*/
   }
   iframe {
     width: 360;
