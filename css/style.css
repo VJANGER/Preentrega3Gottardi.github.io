@@ -38,6 +38,7 @@ nav {
   margin-left: 4rem;
   padding: 2rem 0;
   float: left;
+  color: #fff;
 }
 .a {
   font-weight: bold;
@@ -59,9 +60,9 @@ a:visited {
   margin: auto;
 }
 .copy {
-  width: 150px;
+  width: 9rem;
   float: left;
-  padding: 8px;
+  padding: 0.5rem;
   color: #fff;
 }
 .linksBox {
@@ -69,15 +70,15 @@ a:visited {
 }
 .links {
   list-style: none;
-  margin-left: 55px;
-  padding: 30px 0;
+  margin-left: 4rem;
+  padding: 2rem 0;
   float: left;
 }
 .fb {
-  width: 50px;
+  width: 3rem;
 }
 .ig {
-  width: 50px;
+  width: 3rem;
 }
 
 /*card*/
@@ -288,5 +289,8 @@ article {
   .li {
     margin-left: 2rem;
     padding-top: 1rem;
+  }
+  iframe {
+    width: 360;
   }
 }
