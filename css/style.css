@@ -259,6 +259,9 @@ article {
   h1 {
     margin-bottom: 3rem;
   }
+  .formcaja {
+    height: 30rem;
+  }
 }
 @media (max-width: 560px) {
   .manubriosFlex {
