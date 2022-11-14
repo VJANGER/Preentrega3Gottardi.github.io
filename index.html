@@ -22,35 +22,11 @@
   </head>
   <body class="body">
     <header id="top">
-      <!--<div class="menu">
-        <a href="./index.html"
-          ><img class="imageNav" src="./images/logo.png" alt="logo"
-        /></a>
-        <nav>
-          <ul>
-            <li class="li">
-              <a class="a" href="./pages/productos.html">Productos</a>
-            </li>
-            <li class="li">
-              <a class="a" href="./pages/horquillas.html">Horquillas</a>
-            </li>
-            <li class="li">
-              <a class="a" href="./pages/cuadros.html">Cuadros</a>
-            </li>
-            <li class="li">
-              <a class="a" href="./pages/manubrios.html">Manubrios</a>
-            </li>
-            <li class="li"><a class="a" href="./pages/stems.html">Stems</a></li>
-            <li class="li">
-              <a class="a" href="./index.html#contacto">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-      </div> -->
-
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"><img class="imgLogo" src="./images/logo.png" alt="logo"></a>
+          <a class="navbar-brand" href="./index.html"
+            ><img class="imgLogo" src="./images/logo.png" alt="logo"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -60,26 +36,49 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"> </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              
-              
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav justify-content-end">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./pages/productos.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Productos</a
+                >
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./pages/cuadros.html">Cuadros</a></li>
-                  <li><a class="dropdown-item" href="./pages/horquillas.html">Horquillas</a></li>
-                  <li><a class="dropdown-item" href="./pages/manubrios.html">Manubrios</a></li>
-                  <li><a class="dropdown-item" href="./pages/stems.html">Stems</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/cuadros.html"
+                      >Cuadros</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/horquillas.html"
+                      >Horquillas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/manubrios.html"
+                      >Manubrios</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/stems.html">Stems</a>
+                  </li>
                 </ul>
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html#quienes">Quién somos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html#contacto">Contacto</a>
-                </li>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#quienes">Quién somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -88,7 +87,7 @@
     </header>
     <div class="base">
       <div class="tarjeta">
-        <h1 class="tit" id="quienes" >Somos RAW Bike Co.</h1>
+        <h1 class="tit" id="quienes">Somos RAW Bike Co.</h1>
         <p class="textacerca">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
           exercitationem odio, magni doloremque ipsum itaque doloribus assumenda
@@ -112,47 +111,64 @@
         <h2 id="contacto">Contacto</h2>
         <form class="form" action="enviar.php" method="get">
           <fieldset class="fieldset">
-            <div class="campo">
-              <label for="nombre">Nombre</label>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre</label>
               <input
                 type="text"
-                id="nombre"
-                placeholder="Ingrese su nombre"
-                required
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
               />
+              <div id="emailHelp" class="form-text"></div>
             </div>
-            <div class="campo">
-              <label for="email">Email</label>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Dirección de Email</label
+              >
               <input
-                class="contacto__email"
                 type="email"
-                name="Email"
-                placeholder="Correo electronico"
-                id=" Email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
               />
+              <div id="emailHelp" class="form-text"></div>
             </div>
 
-            <textarea
-              class="campo"
-              name="mensaje"
-              id="mensaje"
-              placeholder="Escribe aquí tu mensaje"
-              cols="23"
-              rows="10"
-            ></textarea>
-            <div class="campo">
-              <input type="checkbox" name="acepta" id="news" />
-              Recibe news.
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2">Comentarios</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+              <label class="form-check-label" for="flexCheckChecked">
+                Subscribirse a Newsletter
+              </label>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
           </fieldset>
         </form>
       </div>
       <div class="mapa">
+        <h3>Encrontrá nuestros productos acá</h3>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13134.417477609652!2d-58.47441909999999!3d-34.6141645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1668295955732!5m2!1ses-419!2sar"
-          width="800"
-          height="360"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13134.417477609652!2d-58.47441909999999!3d-34.6141645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1668405106158!5m2!1ses-419!2sar"
+          width="400"
+          height="300"
           style="border: 0"
+          allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
