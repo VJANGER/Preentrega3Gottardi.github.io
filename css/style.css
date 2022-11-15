@@ -153,12 +153,13 @@
 .formcaja {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
   height: 28rem;
-  padding: 20px;
+  padding: 1.2rem;
   background-color: #fff;
   border-radius: 8px;
   margin-top: 50px;
-  margin-bottom: 50px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .form {
@@ -222,17 +223,31 @@ article {
   justify-content: space-evenly;
 }
 .mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   height: 28rem;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
   margin-top: 50px;
-  margin-bottom: 50px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
+iframe {
+  width: 425px;
+  height: 300px;
+}
+footer {
+  margin-top: 50px;
+}
 /*media queries*/
 
+@media (max-width: 350px) {
+  .links {
+    margin-left: 2rem;
+  }
+}
 @media (max-width: 650px) {
   .productosFlex {
     flex-direction: column;
@@ -260,7 +275,7 @@ article {
     margin-bottom: 3rem;
   }
   .formcaja {
-    height: 34rem;
+    height: 28rem;
   }
 }
 @media (max-width: 560px) {
@@ -279,14 +294,15 @@ article {
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
+  iframe {
+    width: 300px;
+  }
 }
+
 @media (max-width: 830px) {
   .li {
     margin-left: 2rem;
     padding-top: 1rem;
     /*color: #fff;*/
-  }
-  .mapa iframe {
-    width: 360;
   }
 }
