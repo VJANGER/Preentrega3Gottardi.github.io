@@ -1,0 +1,59 @@
+/*media queries*/
+@media (min-width:768px){
+  .iframe{
+    width: 500px;
+    height: 400px;
+  }
+  @mixin flex ($margin, $display, $direction, $align, $justify, $wrap){
+    margin: $margin;
+    display: $display;
+    flex-direction: $direction;
+    align-content: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    }
+  .productosFlex {
+    @include flex(0rem auto,flex ,column ,center ,space-evenly, wrap )
+  }
+  .horquillasFlex {
+    @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+  }
+  .cuadrosFlex {
+    @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+  }
+  .manubriosFlex {
+    @include flex(0rem auto,flex ,row ,center ,space-evenly,wrap )
+  }
+  .stemFlex {
+    @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+  }
+}
+@media (min-width:1024px){
+  .iframe{
+    width: 800px;
+    height: 600px;
+  }
+  @mixin flex ($margin, $display, $direction, $align, $justify, $wrap){
+    margin: $margin;
+    display: $display;
+    flex-direction: $direction;
+    align-content: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    }
+  .productosFlex {
+    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+  }
+  .horquillasFlex {
+    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+  }
+  .cuadrosFlex {
+    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+  }
+  .manubriosFlex {
+    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+  }
+  .stemFlex {
+    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+  }
+}

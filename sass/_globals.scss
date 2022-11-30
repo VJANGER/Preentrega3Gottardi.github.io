@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+.body {
+  background-color: #efefef;
+}
+
+/*nav*/ 
+nav{
+  background-color: $color__dark;
+  & .imgLogo {
+    width: 3rem;
+  }
+}
+/*footer*/
+
+footer {
+  margin-top: 50px;
+}
+.footer {
+  background-color: $color__dark;
+  width: 100%;
+  clear: both;
+  content: "";
+  display: table;  
+  & .footerMenu {
+    width: 100%;
+    margin: auto;
+    }
+  & .copy {
+    width: 9rem;
+    float: left;
+    padding: 0.5rem;
+    color: $color__light;
+    }
+  & .linksBox {
+      float: right;
+    
+    & .links {
+      list-style: none;
+      margin-left: 2rem;
+      padding: 2rem 0;
+      float: left;
+      & .fb {
+      width: 3rem;
+      }
+      & .ig {
+      width: 3rem;
+      }
+      & .altop{
+      width: 3rem;
+      margin-right: 2rem;
+      }
+    }
+  }
+}
+
+/*form*/
+
+article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  & .formcaja {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 28rem;
+    padding: 1.2rem;
+    background-color: $color__light;
+    border-radius: 8px;
+    margin-top: 50px;
+    box-shadow: $shadow;
+    width: 90%;
+  }
+  & .form {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  
+  & .campo {
+    display: block;
+    margin: 10px;
+  }
+}
+
+/*mapa*/
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 28rem;
+  padding: 20px;
+  background-color: $color__light;
+  border-radius: 8px;
+  margin-top: 50px;
+  box-shadow: $shadow;
+  & .iframe {
+    width: 270px;
+    height: 300px;
+  }
+}  

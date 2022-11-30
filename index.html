@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Somos Raw Bike Co. Todo para el Fixed Gear hecho en Argentina"/>
+    <meta name="keywords" content="bicicletas, cuadros, horquillas, manubrios, fixed gear, F.S.F.G.,hand made, acero, bicycle, frames, forks, handlebars, stell"/>
+
     <title>Raw Bike co.</title>
     <link rel="icon" href="./images/icon.ico" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +26,7 @@
   </head>
   <body class="body">
     <header id="top">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"
             ><img class="imgLogo" src="./images/logo.png" alt="logo"
@@ -85,16 +89,16 @@
         </div>
       </nav>
     </header>
+    <!--about-->
     <div class="base">
       <div class="tarjeta">
         <h1 class="tit" id="quienes">Somos RAW Bike Co.</h1>
         <p class="textacerca">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          exercitationem odio, magni doloremque ipsum itaque doloribus assumenda
-          nesciunt fugiat sit aperiam voluptatum illum eligendi! Aperiam
-          accusantium earum consequuntur sint! Officiis?
+          Todo nuestro staff son riders de alto nivel que hacen a la cultura del fixed gear en la Argentina. Desde el principio decidimos satisfacer la demanda de nuestros clientes con los mejores materiales, los mejores diseños y la geometría más adecuada para mejorer la experiencia al andar.
+          Es hora que lo compartamos en todo el mundo.
         </p>
       </div>
+      <!--productos-->
       <div class="tarjetaprod">
         <a href="./pages/productos.html">
           <img
@@ -133,7 +137,6 @@
               />
               <div id="emailHelp" class="form-text"></div>
             </div>
-
             <div class="form-floating">
               <textarea
                 class="form-control"
@@ -141,7 +144,7 @@
                 id="floatingTextarea2"
                 style="height: 100px"
               ></textarea>
-              <label for="floatingTextarea2">Comentarios</label>
+              <label for="floatingTextarea2">Escribanos su mensaje</label>
             </div>
             <div class="form-check">
               <input
@@ -156,22 +159,14 @@
               </label>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
+              <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
           </fieldset>
         </form>
       </div>
       <div class="mapa">
         <h3>Encrontrá nuestros productos acá</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13134.417477609652!2d-58.47441909999999!3d-34.6141645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1668405106158!5m2!1ses-419!2sar"
-          width="350"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13134.417477609652!2d-58.47441909999999!3d-34.6141645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1669786647998!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </article>
 
@@ -192,7 +187,7 @@
             ><img class="ig" src="./images/instagram-512.png" alt="instagram"
           /></a>
           <a class="links" href="./index.html#top"
-            ><img class="ig" src="./images/top.png" alt="top"
+            ><img class="altop" src="./images/top.png" alt="top"
           /></a>
         </div>
       </div>
