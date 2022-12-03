@@ -62,9 +62,10 @@ footer {
 
 article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
   & .formcaja {
     display: flex;
     flex-direction: column;
@@ -76,35 +77,24 @@ article {
     border-radius: 8px;
     margin-top: 50px;
     box-shadow: $shadow;
-    width: 90%;
   }
-  & .form {
-    margin-top: 16px;
-    margin-bottom: 20px;
-  }
-  
-  & .campo {
-    display: block;
-    margin: 10px;
-  }
+  /* mapa */
+  & .mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 28rem;
+    padding: 20px;
+    background-color: $color__light;
+    border-radius: 8px;
+    margin-top: 50px;
+    box-shadow: $shadow;
+    & .iframe {
+      width: 270px;
+      height: 300px;
+    }
+  }  
 }
 
-/*mapa*/
 
-.mapa {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 90%;
-  height: 28rem;
-  padding: 20px;
-  background-color: $color__light;
-  border-radius: 8px;
-  margin-top: 50px;
-  box-shadow: $shadow;
-  & .iframe {
-    width: 270px;
-    height: 300px;
-  }
-}  

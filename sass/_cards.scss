@@ -52,23 +52,16 @@
 }
 /*card about*/
 .base {
-  margin-top: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 50px 5%;
   & .tarjeta {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: $move;
     background-color: $color__light;
-    width: 100%;
     border-radius: 10px;
     box-shadow: $shadow;
     transition: $move;
-    &:hover {
-    scale: $scale;
-    }
     & .tit {
     text-align: center;
     margin-top: 1rem;
@@ -82,23 +75,18 @@
     font-size: 1rem;
     text-align: center;
     }
+  & a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      & .imgmain{
+      width: 75%;
+      height: 75%;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      border: $border;
+      }
+    }
   }  
 }  
-  /*card prod index*/
-
-  .tarjetaprod {
-    background-color: $color__light;
-    border-radius: 8px;
-    margin-top: 50px;
-    box-shadow: $shadow;
-    transition: $move;
-    &:hover {
-      scale: $scale;
-    }
-    & .imgmain {
-      display: inline-block;
-      width: 65%;
-      margin-left: 17%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }}

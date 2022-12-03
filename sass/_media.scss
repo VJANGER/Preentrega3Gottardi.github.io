@@ -4,8 +4,7 @@
     width: 500px;
     height: 400px;
   }
-  @mixin flex ($margin, $display, $direction, $align, $justify, $wrap){
-    margin: $margin;
+  @mixin flex ($display, $direction, $align, $justify, $wrap){
     display: $display;
     flex-direction: $direction;
     align-content: $align;
@@ -13,19 +12,25 @@
     flex-wrap: $wrap;
     }
   .productosFlex {
-    @include flex(0rem auto,flex ,column ,center ,space-evenly, wrap )
+    @include flex(flex ,column ,center ,space-evenly, wrap )
   }
   .horquillasFlex {
-    @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+    @include flex(flex ,column ,center ,space-evenly,wrap )
   }
   .cuadrosFlex {
-    @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+    @include flex(flex ,column ,center ,space-evenly,wrap )
   }
   .manubriosFlex {
-    @include flex(0rem auto,flex ,row ,center ,space-evenly,wrap )
+    @include flex(flex ,row ,center ,space-evenly,wrap )
   }
   .stemFlex {
-    @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+    @include flex(flex ,column ,center ,space-evenly,wrap )
+  }
+  article{
+    @include flex(flex,row,center,space-evenly,wrap)
+  }
+  .formcaja{
+    @include flex(flex,row,center,space-evenly,wrap)
   }
 }
 @media (min-width:1024px){
@@ -33,8 +38,7 @@
     width: 800px;
     height: 600px;
   }
-  @mixin flex ($margin, $display, $direction, $align, $justify, $wrap){
-    margin: $margin;
+  @mixin flex ($display, $direction, $align, $justify, $wrap){
     display: $display;
     flex-direction: $direction;
     align-content: $align;
@@ -42,18 +46,24 @@
     flex-wrap: $wrap;
     }
   .productosFlex {
-    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+    @include flex(flex,row,center,space-evenly,wrap)
   }
   .horquillasFlex {
-    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+    @include flex(flex,row,center,space-evenly,wrap)
   }
   .cuadrosFlex {
-    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+    @include flex(flex,row,center,space-evenly,wrap)
   }
   .manubriosFlex {
-    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+    @include flex(flex,row,center,space-evenly,wrap)
   }
   .stemFlex {
-    @include flex(0rem auto,flex,row,center,space-evenly,wrap)
+    @include flex(flex,row,center,space-evenly,wrap)
+  }
+  article{
+    @include flex(flex,row,center,space-evenly,wrap)
+  }
+  .formcaja{
+    @include flex(flex,row,center,space-evenly,wrap)
   }
 }

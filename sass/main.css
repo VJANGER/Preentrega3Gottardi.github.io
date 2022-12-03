@@ -50,24 +50,17 @@
 
 /*card about*/
 .base {
-  margin-top: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 50px 5%;
 }
 .base .tarjeta {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.4s ease-in-out;
   background-color: #fff;
-  width: 100%;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease-in-out;
-}
-.base .tarjeta:hover {
-  scale: 110%;
 }
 .base .tarjeta .tit {
   text-align: center;
@@ -82,24 +75,18 @@
   font-size: 1rem;
   text-align: center;
 }
-
-/*card prod index*/
-.tarjetaprod {
-  background-color: #fff;
+.base .tarjeta a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.base .tarjeta a .imgmain {
+  width: 75%;
+  height: 75%;
+  margin-bottom: 2rem;
   border-radius: 8px;
-  margin-top: 50px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: all 0.4s ease-in-out;
-}
-.tarjetaprod:hover {
-  scale: 110%;
-}
-.tarjetaprod .imgmain {
-  display: inline-block;
-  width: 65%;
-  margin-left: 17%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border: solid 1px #000;
 }
 
 /*flexs productos*/
@@ -212,9 +199,10 @@ footer {
 /*form*/
 article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /* mapa */
 }
 article .formcaja {
   display: flex;
@@ -227,24 +215,12 @@ article .formcaja {
   border-radius: 8px;
   margin-top: 50px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  width: 90%;
 }
-article .form {
-  margin-top: 16px;
-  margin-bottom: 20px;
-}
-article .campo {
-  display: block;
-  margin: 10px;
-}
-
-/*mapa*/
-.mapa {
+article .mapa {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 90%;
   height: 28rem;
   padding: 20px;
   background-color: #fff;
@@ -252,7 +228,7 @@ article .campo {
   margin-top: 50px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.mapa .iframe {
+article .mapa .iframe {
   width: 270px;
   height: 300px;
 }
@@ -264,7 +240,6 @@ article .campo {
     height: 400px;
   }
   .productosFlex {
-    margin: 0rem auto;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -272,7 +247,6 @@ article .campo {
     flex-wrap: wrap;
   }
   .horquillasFlex {
-    margin: 0rem auto;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -280,7 +254,6 @@ article .campo {
     flex-wrap: wrap;
   }
   .cuadrosFlex {
-    margin: 0rem auto;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -288,7 +261,6 @@ article .campo {
     flex-wrap: wrap;
   }
   .manubriosFlex {
-    margin: 0rem auto;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -296,9 +268,22 @@ article .campo {
     flex-wrap: wrap;
   }
   .stemFlex {
-    margin: 0rem auto;
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  article {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .formcaja {
+    display: flex;
+    flex-direction: row;
     align-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -310,7 +295,6 @@ article .campo {
     height: 600px;
   }
   .productosFlex {
-    margin: 0rem auto;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -318,7 +302,6 @@ article .campo {
     flex-wrap: wrap;
   }
   .horquillasFlex {
-    margin: 0rem auto;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -326,7 +309,6 @@ article .campo {
     flex-wrap: wrap;
   }
   .cuadrosFlex {
-    margin: 0rem auto;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -334,7 +316,6 @@ article .campo {
     flex-wrap: wrap;
   }
   .manubriosFlex {
-    margin: 0rem auto;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -342,7 +323,20 @@ article .campo {
     flex-wrap: wrap;
   }
   .stemFlex {
-    margin: 0rem auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  article {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .formcaja {
     display: flex;
     flex-direction: row;
     align-content: center;
