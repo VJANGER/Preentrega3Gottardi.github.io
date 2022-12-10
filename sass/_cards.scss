@@ -7,11 +7,11 @@
   border-radius: 8px;
   width: 17rem;
   height: 30rem;
-  margin-top: 3rem;
-  box-shadow: $shadow;
+  box-shadow: $shadowoff;
   transition: $move;
   &:hover {
     scale: $scale;
+    box-shadow: $shadow;
   }
   & .titulo {
   margin-left: 1rem;
@@ -20,7 +20,7 @@
   & .imagen {
   width: 16rem;
   border: $border;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-left: 0.45rem;
   }
   & .texto {
@@ -58,21 +58,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $color__light;
-    border-radius: 10px;
-    box-shadow: $shadow;
-    transition: $move;
     & .tit {
     text-align: center;
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.9rem;
+    width: 100%;
+    }
+    & .rider{
+      width: 100%;
+      border-radius: 10px;
     }
     & .textacerca {
     display: inline-block;
     width: 90%;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    font-size: 1rem;
+    margin-top: 1.3rem;
+    margin-bottom: 4rem;
+    font-size: .7rem;
     text-align: center;
     }
   & a{
@@ -80,9 +81,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
       & .imgmain{
-      width: 75%;
-      height: 75%;
+      width: 95%;
       margin-bottom: 2rem;
       border-radius: 8px;
       border: $border;

@@ -4,40 +4,55 @@
     width: 500px;
     height: 400px;
   }
-  @mixin flex ($display, $direction, $align, $justify, $wrap){
-    display: $display;
-    flex-direction: $direction;
-    align-content: $align;
-    justify-content: $justify;
-    flex-wrap: $wrap;
-    }
-  .productosFlex {
-    @include flex(flex ,column ,center ,space-evenly, wrap )
+  .productosFlex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 3rem;
   }
-  .horquillasFlex {
-    @include flex(flex ,column ,center ,space-evenly,wrap )
+  .horquillasFlex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 3rem;
   }
-  .cuadrosFlex {
-    @include flex(flex ,column ,center ,space-evenly,wrap )
+  .cuadrosFlex{display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 3rem;
   }
-  .manubriosFlex {
-    @include flex(flex ,row ,center ,space-evenly,wrap )
+  .manubriosFlex{
+    flex-direction: row;
   }
-  .stemFlex {
-    @include flex(flex ,column ,center ,space-evenly,wrap )
-  }
-  article{
-    @include flex(flex,row,center,space-evenly,wrap)
-  }
-  .formcaja{
-    @include flex(flex,row,center,space-evenly,wrap)
-  }
+
 }
 @media (min-width:1024px){
   .iframe{
     width: 800px;
     height: 600px;
   }
+  .horquillasFlex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 3rem;
+  }
+  .cuadrosFlex{display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 3rem;
+  }
+  .productosFlex{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
   @mixin flex ($display, $direction, $align, $justify, $wrap){
     display: $display;
     flex-direction: $direction;
@@ -45,25 +60,9 @@
     justify-content: $justify;
     flex-wrap: $wrap;
     }
-  .productosFlex {
-    @include flex(flex,row,center,space-evenly,wrap)
-  }
-  .horquillasFlex {
-    @include flex(flex,row,center,space-evenly,wrap)
-  }
-  .cuadrosFlex {
-    @include flex(flex,row,center,space-evenly,wrap)
-  }
-  .manubriosFlex {
-    @include flex(flex,row,center,space-evenly,wrap)
-  }
-  .stemFlex {
-    @include flex(flex,row,center,space-evenly,wrap)
-  }
   article{
     @include flex(flex,row,center,space-evenly,wrap)
   }
   .formcaja{
     @include flex(flex,row,center,space-evenly,wrap)
   }
-}

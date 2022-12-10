@@ -38,6 +38,7 @@ footer {
     }
   & .linksBox {
       float: right;
+      margin-right: 1rem;
     
     & .links {
       list-style: none;
@@ -65,6 +66,7 @@ article {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
 
   & .formcaja {
     display: flex;
@@ -93,6 +95,8 @@ article {
     & .iframe {
       width: 270px;
       height: 300px;
+      border: $border;
+      border-radius: 8px;
     }
   }  
 }

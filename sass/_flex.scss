@@ -1,26 +1,27 @@
 /*flexs productos*/
-@mixin flex ($margin, $display, $direction, $align, $justify, $wrap){
-  margin: $margin;
+@mixin flex ($margin, $display, $direction, $align, $justify, $wrap, $rgap){
+  margin-top: $margin;
   display: $display;
   flex-direction: $direction;
   align-content: $align;
   justify-content: $justify;
   flex-wrap: $wrap;
+  row-gap: $rgap;
   }
 .productosFlex {
-  @include flex(0rem auto,flex ,column ,center ,space-evenly, wrap )
+  @include flex(3rem,flex ,column ,center ,space-evenly, wrap,3rem)
 }
 .horquillasFlex {
-  @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+  @include flex(3rem,flex ,column ,center ,space-evenly,wrap,3rem)
 }
 .cuadrosFlex {
-  @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+  @include flex(3rem,flex ,column ,center ,space-evenly,wrap,3rem)
 }
 .manubriosFlex {
-  @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+  @include flex(3rem,flex ,column ,center ,space-evenly,wrap,3rem)
 }
 .stemFlex {
-  @include flex(0rem auto,flex ,column ,center ,space-evenly,wrap )
+  @include flex(3rem,flex ,column ,center ,space-evenly,wrap,3rem)
 }
 
   
