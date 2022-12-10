@@ -58,33 +58,32 @@
   justify-content: center;
   align-items: center;
 }
-.base .tarjeta .tit {
+.base .tit {
   text-align: center;
   margin-top: 1rem;
   font-size: 1.9rem;
   width: 100%;
 }
-.base .tarjeta .rider {
+.base .rider {
   width: 100%;
   border-radius: 10px;
 }
-.base .tarjeta .textacerca {
-  display: inline-block;
+.base .textacerca {
   width: 90%;
   margin-top: 1.3rem;
   margin-bottom: 4rem;
-  font-size: 0.7rem;
   text-align: center;
 }
-.base .tarjeta a {
+.base a {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
-}
-.base .tarjeta a .imgmain {
+  margin: 1rem auto;
   width: 95%;
+}
+.base a .imgmain {
+  width: 100%;
   margin-bottom: 2rem;
   border-radius: 8px;
   border: solid 1px #000;
@@ -254,6 +253,9 @@ article .mapa .iframe {
     width: 500px;
     height: 400px;
   }
+  .textcerca {
+    font-size: 1.3rem;
+  }
   .productosFlex {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -284,6 +286,14 @@ article .mapa .iframe {
     width: 800px;
     height: 600px;
   }
+  .textcerca {
+    font-size: 1.6rem;
+  }
+  .productosFlex {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
   .horquillasFlex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -298,32 +308,25 @@ article .mapa .iframe {
     justify-items: center;
     row-gap: 3rem;
   }
-  .productosFlex {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+  .stemFlex {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
-}
-.stemFlex {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-article {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.formcaja {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  article {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .formcaja {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=main.css.map */

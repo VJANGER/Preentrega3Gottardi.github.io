@@ -4,6 +4,9 @@
     width: 500px;
     height: 400px;
   }
+  .textcerca{
+    font-size: 1.3rem;
+  }
   .productosFlex{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -34,6 +37,14 @@
     width: 800px;
     height: 600px;
   }
+  .textcerca{
+    font-size: 1.6rem;
+  }
+  .productosFlex{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
   .horquillasFlex{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,13 +58,6 @@
     justify-items: center;
     row-gap: 3rem;
   }
-  .productosFlex{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-
-  }
-}
   @mixin flex ($display, $direction, $align, $justify, $wrap){
     display: $display;
     flex-direction: $direction;
@@ -70,3 +74,4 @@
   .formcaja{
     @include flex(flex,row,center,space-evenly,wrap)
   }
+}
