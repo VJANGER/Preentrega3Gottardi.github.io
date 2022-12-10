@@ -62,7 +62,7 @@
     flex-wrap: $wrap;
     }
   .stemFlex{
-    @include flex(flex,row,center,space-evenly,wrap )
+    @include flex(flex,row,center,space-evenly,wrap)
   }
   article{
     @include flex(flex,row,center,space-evenly,wrap)
