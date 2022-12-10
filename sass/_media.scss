@@ -18,7 +18,8 @@
     justify-items: center;
     row-gap: 3rem;
   }
-  .cuadrosFlex{display: grid;
+  .cuadrosFlex{
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -27,7 +28,6 @@
   .manubriosFlex{
     flex-direction: row;
   }
-
 }
 @media (min-width:1024px){
   .iframe{
@@ -51,6 +51,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+
   }
 }
   @mixin flex ($display, $direction, $align, $justify, $wrap){
@@ -60,6 +61,9 @@
     justify-content: $justify;
     flex-wrap: $wrap;
     }
+  .stemFlex{
+    @include flex(flex,row,center,space-evenly,wrap )
+  }
   article{
     @include flex(flex,row,center,space-evenly,wrap)
   }
