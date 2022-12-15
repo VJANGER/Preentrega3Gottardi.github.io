@@ -1,62 +1,74 @@
 /*media queries*/
+/*tablet*/
 @media (min-width:768px){
-  .iframe{
-    width: 500px;
-    height: 400px;
+  article{
+    & .mapa{
+      .iframe{
+        width: 500px;
+        height: 400px;
+    }
   }
-  .textcerca{
-    font-size: 1.3rem;
+}
+  .base{
+    & .textacerca{
+      font-size: 1.3em;
+    }
+  } 
+  @mixin grid ($display, $column, $row, $justify, $rgap){
+    display: $display;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    justify-items: $justify;
+    row-gap: $rgap;
   }
   .productosFlex{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    row-gap: 3rem;
+    @include grid(grid,1fr 1fr ,1fr 1fr ,center ,3rem )    
   }
   .horquillasFlex{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    row-gap: 3rem;
+    @include grid(grid,1fr 1fr ,1fr 1fr 1fr,center ,3rem ) 
   }
   .cuadrosFlex{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    row-gap: 3rem;
+    @include grid(grid,1fr 1fr ,1fr 1fr 1fr 1fr ,center ,3rem ) 
   }
   .manubriosFlex{
     flex-direction: row;
   }
 }
+
+
+/*desktop*/
+
 @media (min-width:1024px){
-  .iframe{
-    width: 800px;
-    height: 600px;
+    .base{
+    & .rider{
+      width: 50%;
+    }
+    &.textacerca{
+      font-size: 1.7em;
+    }
+    & a{
+      & .imgmain{
+      width: 50%;
+    }
   }
-  .textcerca{
-    font-size: 1.6rem;
-  }
+}
   .productosFlex{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
-  .horquillasFlex{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    row-gap: 3rem;
+  @mixin grid ($display, $column, $row, $justify, $rgap){
+    display: $display;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    justify-items: $justify;
+    row-gap: $rgap;
   }
-  .cuadrosFlex{display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    row-gap: 3rem;
+  .horquillasFlex{
+  @include grid(grid,1fr 1fr 1fr,1fr 1fr,center ,3rem ) 
+  }
+  .cuadrosFlex{
+  @include grid(grid,1fr 1fr 1fr,1fr 1fr 1fr ,center ,3rem ) 
   }
   @mixin flex ($display, $direction, $align, $justify, $wrap){
     display: $display;
@@ -67,11 +79,12 @@
     }
   .stemFlex{
     @include flex(flex,row,center,space-evenly,wrap)
-  }
+    }
   article{
     @include flex(flex,row,center,space-evenly,wrap)
-  }
+    }
   .formcaja{
     @include flex(flex,row,center,space-evenly,wrap)
-  }
+    }
 }
+

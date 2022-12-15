@@ -50,7 +50,7 @@
 
 /*card about*/
 .base {
-  margin: 50px 5%;
+  margin: 1.2rem 5%;
 }
 .base .tarjeta {
   display: flex;
@@ -60,8 +60,8 @@
 }
 .base .tit {
   text-align: center;
-  margin-top: 1rem;
-  font-size: 1.9rem;
+  margin-top: 0.2rem;
+  font-size: 1.9em;
   width: 100%;
 }
 .base .rider {
@@ -69,10 +69,11 @@
   border-radius: 10px;
 }
 .base .textacerca {
-  width: 90%;
+  width: 95%;
   margin-top: 1.3rem;
   margin-bottom: 4rem;
   text-align: center;
+  font-size: 0.9em;
 }
 .base a {
   display: flex;
@@ -234,7 +235,7 @@ article .mapa {
   justify-content: space-evenly;
   align-items: center;
   height: 28rem;
-  padding: 20px;
+  padding: 1.7rem;
   background-color: #fff;
   border-radius: 8px;
   margin-top: 50px;
@@ -248,13 +249,14 @@ article .mapa .iframe {
 }
 
 /*media queries*/
+/*tablet*/
 @media (min-width: 768px) {
-  .iframe {
+  article .mapa .iframe {
     width: 500px;
     height: 400px;
   }
-  .textcerca {
-    font-size: 1.3rem;
+  .base .textacerca {
+    font-size: 1.3em;
   }
   .productosFlex {
     display: grid;
@@ -281,13 +283,16 @@ article .mapa .iframe {
     flex-direction: row;
   }
 }
+/*desktop*/
 @media (min-width: 1024px) {
-  .iframe {
-    width: 800px;
-    height: 600px;
+  .base .rider {
+    width: 50%;
   }
-  .textcerca {
-    font-size: 1.6rem;
+  .base.textacerca {
+    font-size: 1.7em;
+  }
+  .base a .imgmain {
+    width: 50%;
   }
   .productosFlex {
     margin-left: auto;
